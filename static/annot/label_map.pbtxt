@@ -1,0 +1,130 @@
+item {
+    name: "A",
+    id: 1,
+    display_name: "A"
+}
+item {
+    name: "B",
+    id: 2,
+    display_name: "B"
+}
+item {
+    name: "C",
+    id: 3,
+    display_name: "C"
+}
+item {
+    name: "D",
+    id: 4,
+    display_name: "D"
+}
+item {
+    name: "E",
+    id: 5,
+    display_name: "E"
+}
+item {
+    name: "F",
+    id: 6,
+    display_name: "F"
+}
+item {
+    name: "G",
+    id: 7,
+    display_name: "G"
+}
+item {
+    name: "H",
+    id: 8,
+    display_name: "H"
+}
+item {
+    name: "I",
+    id: 9,
+    display_name: "I"
+}
+item {
+    name: "J",
+    id: 10,
+    display_name: "J"
+}
+item {
+    name: "K",
+    id: 11,
+    display_name: "K"
+}
+item {
+    name: "L",
+    id: 12,
+    display_name: "L"
+}
+item {
+    name: "M",
+    id: 13,
+    display_name: "M"
+}
+item {
+    name: "N",
+    id: 14,
+    display_name: "N"
+}
+item {
+    name: "O",
+    id: 15,
+    display_name: "O"
+}
+item {
+    name: "P",
+    id: 16,
+    display_name: "P"
+}
+item {
+    name: "Q",
+    id: 17,
+    display_name: "Q"
+}
+item {
+    name: "R",
+    id: 18,
+    display_name: "R"
+}
+item {
+    name: "S",
+    id: 19,
+    display_name: "S"
+}
+item {
+    name: "T",
+    id: 20,
+    display_name: "T"
+}
+item {
+    name: "U",
+    id: 21,
+    display_name: "U"
+}
+item {
+    name: "V",
+    id: 22,
+    display_name: "V"
+}
+item {
+    name: "W",
+    id: 23,
+    display_name: "W"
+}
+item {
+    name: "X",
+    id: 24,
+    display_name: "X"
+}
+item {
+    name: "Y",
+    id: 25,
+    display_name: "Y"
+}
+item {
+    name: "Z",
+    id: 26,
+    display_name: "Z"
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Grayscale - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Home</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Translate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Veronica</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5"> </h2>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Your Personal ASL Translator</h2>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Scroll Down, Click the Tabs or the Button to Start</h2>
+                        <a class="btn btn-primary" href="#about">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">About Veronica</h2>
+                        <p class="text-white-50">
+                            Veronica is an ASL translator that will use your computer's camera to turn your ASL hand signs into text to speech. Please allow this site to access your camera. If you continue scrolling or 
+                            <a class="nav-link" href="#camera">Click Here</a>
+                            you will see the translation app.
+                        </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6 centered"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                    <div class="col-lg-6 centered"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                </div>
+                
+                         <div class="container px-4 px-lg-5">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" id="camera" src="{{ url_for('video_feed') }}" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Translator Veronica</h4>
+                            <p class="text-black-50 mb-0">On the left you will see your webcam which can pick up any ASL signs. These signs will be converted to text which will be displayed below the camera. If you click the Translate button, the text will be converted to text to speech. Above are a few ASL signs you can try out. </p>
+                            <br/><br/>
+                            <div><a class="btn btn-primary" href="{{ url_for('home') }}#camera">Deny Webcam</a></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+      
+        <!-- Signup-->
+            <section class="py-5 signup-section"  id="signup">
+                <div class="container px-5">
+                    <!-- Contact form-->
+                    <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                        <div class="text-center mb-5">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                            <h1 class="fw-bolder">Questions, Comments, Concerns?</h1>
+                            <p class="lead fw-normal text-muted mb-0">We'd love to hear from you</p>
+                        </div>
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-8 col-xl-6">
+                                <!-- * * * * * * * * * * * * * * *-->
+                                <!-- * * SB Forms Contact Form * *-->
+                                <!-- * * * * * * * * * * * * * * *-->
+                                <!-- This form is pre-integrated with SB Forms.-->
+                                <!-- To make this form functional, sign up at-->
+                                <!-- https://startbootstrap.com/solution/contact-forms-->
+                                <!-- to get an API token!-->
+                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                    <!-- Name input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <label for="name">Full name</label>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                    </div>
+                                    <!-- Email address input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <label for="email">Email address</label>
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                    </div>
+                                    <!-- Phone number input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                        <label for="phone">Phone number</label>
+                                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                    </div>
+                                    <!-- Message input-->
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                        <label for="message">Message</label>
+                                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                    </div>
+                                    <!-- Submit success message-->
+                                    <!---->
+                                    <!-- This is what your users will see when the form-->
+                                    <!-- has successfully submitted-->
+                                    <div class="d-none" id="submitSuccessMessage">
+                                        <div class="text-center mb-3">
+                                            <div class="fw-bolder">Form submission successful!</div>
+                                            To activate this form, sign up at
+                                            <br />
+                                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                        </div>
+                                    </div>
+                                    <!-- Submit error message-->
+                                    <!---->
+                                    <!-- This is what your users will see when there is-->
+                                    <!-- an error submitting the form-->
+                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                    <!-- Submit Button-->
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+        <!-- Contact-->
+        <section class="contact-section">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">4923 Market Street, Toronto ON</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">companyemail@domain.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Jcube Inc. 2021</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
