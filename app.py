@@ -9,9 +9,6 @@ app = Flask(__name__,
     static_folder='static',
     template_folder='templates')
 
-# global model
-model = load_model()
-
 @app.route('/')
 def root():
     return render_template('gray.html')
@@ -30,6 +27,6 @@ def video_feed():
     return Response(detect(model), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == "__main__":
-    # global model
-    # model = load_model()
+    global model
+    model = load_model()
     app.run(debug=True, use_reloader=False)
