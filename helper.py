@@ -96,7 +96,32 @@ def detect(detection_model):
             image_np_resized = cv2.resize(
                 image_np_with_detections, (output_width, output_height))
 
+            frame_elapsed_time = time.time() - frame_start_time
+            # Put model name and fps text-------------------------------------------
+            font = cv2.FONT_HERSHEY_SIMPLEX
+            upperLeftCorner = (30, 35)
+            fontScale = 0.85
+            fontColor = (0, 0, 255)
+            lineType = 2
+
+            cv2.putText(image_np_resized, f'FPS: {np.round(1/frame_elapsed_time, 1)}',
+                        (output_width-200, 35),  # upper right corner
+                        font,
+                        fontScale,
+                        fontColor,
+                        lineType)
+
             ret, buffer = cv2.imencode('.jpg', image_np_resized)
             frame = buffer.tobytes()
             yield (b'--frame\r\n'
                    b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')  # concat frame one by one and show result
+
+            # cv2.imshow('object detection', image_np_resized)  # was (800, 600)
+
+        #     if cv2.waitKey(10) & 0xFF == ord('q'):
+        #         cap.release()
+        #         cv2.destroyAllWindows()
+        #         break
+
+        # cap.release()
+        # cv2.destroyAllWindows()
